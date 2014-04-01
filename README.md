@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 ## Example
 
-Make all ```html <a> ``` inside a div with the class "elipse" ellipsis the text when it reaches more than 35 caracters:
+Make all ``` <a> ``` tags inside a div with the class "elipse" ellipsis the text when it reaches more than 35 caracters:
 
 ```js
 $(document).ready(function(){
