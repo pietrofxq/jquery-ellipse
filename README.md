@@ -9,11 +9,11 @@ Ellipsing your text makes it not to overflow, and given the number of max caract
 ## Usage
 
 Since this is a very short plugin, the best way to use it is just copying the whole code and paste in your JavaScript file.
-But if you aren't familiar with JavaScript at all, just use the <script> tag with src attribute and link this file.
+But if you aren't familiar with JavaScript at all, just use the ```<script>``` tag with ```src``` attribute and link this file.
 
 Then, in another script tag, you will use the function:
 
-```js
+```javascript
 $(document).ready(function(){
 
 	elipsiText('selector',length);
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 ## Example
 
-Make all <a> inside a div with the class "elipse" ellipsis the text when it reaches more than 35 caracters:
+Make all ```<a>``` inside a div with the class "elipse" ellipsis the text when it reaches more than 35 caracters:
 
 ```js
 $(document).ready(function(){
