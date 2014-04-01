@@ -8,9 +8,7 @@ Ellipsing your text makes it not to overflow, and given the number of max caract
 
 ## Usage
 
-Since this is a very short plugin, the best way to use it is just copying the whole code and paste in your JavaScript file.
-But if you aren't familiar with JavaScript at all, just use the <script> tag with the  src attribute and link this file.
-
+Since this is a very short plugin, the best way to use it is just copying the whole code and paste in your JavaScript file. But if you aren't familiar with JavaScript at all, just use the <script> tag with the  src attribute and link this file.
 Then, in another script tag, you will use the function:
 
 ```js
