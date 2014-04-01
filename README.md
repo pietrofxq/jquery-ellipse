@@ -43,7 +43,7 @@ Turns into:
 
 ```html
 <div class="elipse">
-	<a href="">This text has more than 30 caracter...</a>
+	<a href="">This text has more than 35 caracter...</a>
 </div>
 
 ```
