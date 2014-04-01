@@ -1,3 +1,9 @@
+/* jQuery Ellipsi Text
+   Version 1.0
+   Author: github.com/pietrofxq
+*/
+
+
 function elipsiText(selector,length){
 
 	var vetor = $(selector).map(function(){
