@@ -15,20 +15,39 @@ Then, in another script tag, you will use the function:
 ```javascript
 $(document).ready(function(){
 
-	elipsiText('selector',length);
+	$('.class').ellipsiText();
 
 })
 ```
 
-## Example
+## Notes and Options
 
-Make all ``` <a> ``` tags inside a div with the class "elipse" ellipsis the text when it reaches more than 35 caracters:
+By default, the plugin will ellipsi in 30 caracters and will add "..." (no quotes) in the end of the word.
+
+You can easily override this by changing the options:
+
+```js
+$(document).ready(function(){
+	
+	$('.class').ellipsiText({
+		length:50,
+		ellipsi: "......"
+	});
+})
+
+```
+
+Take note that the length of the word *DOESNT* count the length of the ellipsi. When you use it, make sure to add the length of the ellipsi you chose, or add 3 when using the default. For example: if you set the length for 30, your text will have the length of 33.
+
+## Example
 
 
 ```js
 $(document).ready(function(){
 
-	elipsiText('.elipse a',35);
+	$('.elipse a').ellipsiText({
+		length:40
+	});
 
 })
 ```

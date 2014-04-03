@@ -3,26 +3,25 @@
    Author: github.com/pietrofxq
 */
 
+(function ($){
 
-function elipsiText(selector,length){
+	$.fn.ellipsiText= function(options) {
 
-	var vetor = $(selector).map(function(){
+    var settings = $.extend({
+        length : 50,
+        ellipsi : "..."
+        }, options );
 
-		return $(this).text();
+    return this.each(function() {
+        var elem = $(this);
+        var txt = elem.text();
+        if (txt.length>settings.length) {
+             elem.text(txt.substr(0,settings.length - settings.ellipsi.length) + settings.ellipsi );
+        }
+    });
 
-	}).get();
+};
 
-	var i;
-	var teste = [];
 
-	for (i = 0; i < vetor.length; i++){
+}(jQuery));
 
-		teste.push(vetor[i].substr(0,length) + "...");
-	}
-
-	$(selector).each(function(i){
-
-		$(this).text(teste[i]);
-
-	})
-}
