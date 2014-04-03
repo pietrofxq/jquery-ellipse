@@ -10,7 +10,7 @@ Ellipsing your text makes it not to overflow, and given the number of max caract
 
 Since this is a very short plugin, the best way to use it is just copying the whole code and paste in your JavaScript file. But if you aren't familiar with JavaScript at all, just use the ```script``` tag with the  ```src``` attribute and link this file.
 
-Then, in another script tag, you will use the function:
+Then, in another script tag:
 
 ```javascript
 $(document).ready(function(){
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 ```
 
-Take note that the length of the word *DOESNT* count the length of the ellipsi. When you use it, make sure to add the length of the ellipsi you chose, or add 3 when using the default. For example: if you set the length for 30, your text will have the length of 33.
+Take note that the length of the word *DOESNT* count the length of the ellipsi. When you use it, make sure to subtract the length of the ellipsi you chose, or subtract 3 when using the default. For example: if you set the length for 30, your text will have the length of 33.
 
 ## Example
 
