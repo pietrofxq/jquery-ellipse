@@ -8,7 +8,7 @@
 	$.fn.ellipsiText= function(options) {
 
     var settings = $.extend({
-        length : 50,
+        length : 30,
         ellipsi : "..."
         }, options );
 
