@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 ```
 
-Take note that the length of the word *DOESNT* count the length of the ellipsi. When you use it, make sure to subtract the length of the ellipsi you chose, or subtract 3 when using the default. For example: if you set the length for 30, your text will have the length of 33.
+Take note that the length of the word *DOES* count the length of the ellipsi. When you use it, make sure to subtract the length of the ellipsi you chose, or subtract 3 when using the default. For example: if you set the length for 30, your text will have the length of 27 + 3 caracters of the ellipsi, using the default configuration.
 
 ## Example
 
@@ -46,7 +46,7 @@ Take note that the length of the word *DOESNT* count the length of the ellipsi. 
 $(document).ready(function(){
 
 	$('.elipse a').ellipsiText({
-		length:40
+		length:35
 	});
 
 })
@@ -64,7 +64,7 @@ Turns into:
 
 ```html
 <div class="elipse">
-	<a href="">This text has more than 35 caracter...</a>
+	<a href="">This text has more than 35 carac...</a>
 </div>
 
 ```
