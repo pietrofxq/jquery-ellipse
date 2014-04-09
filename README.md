@@ -4,7 +4,7 @@
 ## jQuery Ellipsi Text
 
 A simple jQuery plugin to Elipse a text inside a html tag.
-Ellipsing your text makes it not to overflow, and given the number of max caracters, take them and add "..." to the end of the word so the users can se there is more text somewhere.
+Ellipsing your text makes it not to overflow, and given the number of max caracters, take them and add "..." to the end of the word so the users can see there is more text somewhere.
 
 ## Usage
 
