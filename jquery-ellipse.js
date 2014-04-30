@@ -1,5 +1,5 @@
 /* jQuery Ellipsi Text
-   Version 1.0
+   Version 1.1
    Author: github.com/pietrofxq
 */
 
