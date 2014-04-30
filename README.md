@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 Take note that the length of the word *DOES* count the length of the ellipsi. When you use it, make sure to subtract the length of the ellipsi you chose, or subtract 3 when using the default. For example: if you set the length for 30, your text will have the length of 27 + 3 caracters of the ellipsi, using the default configuration.
 
-# Avoiding the last word being cut off
+### Avoiding the last word being cut off
 
 If you dont want the last word of being cut off like: "My dog is very fun..." you can set the option ```dontCut``` to ```true```:
 
