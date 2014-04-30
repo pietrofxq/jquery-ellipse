@@ -80,7 +80,7 @@ $('.test').ellipsiText({
 
 ```
 
-The text "Lorem ipsum dolor sit amet" turns into "Lorem ipsum..." though disabling the ```dontCut``` option the text becomes "Lorem ipsum dolor..." which should be the correct assumption.
+The text "Lorem ipsum dolor sit amet" turns into "Lorem ipsum..." though disabling the ```dontCut``` option, the text becomes "Lorem ipsum dolor...", which should be the correct assumption.
 
 ## Example
 
