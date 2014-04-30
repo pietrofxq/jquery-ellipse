@@ -3,6 +3,8 @@
 
 ## jQuery Ellipsi Text
 
+Actual version: 1.1
+
 A simple jQuery plugin to Elipse a text inside a html tag.
 Ellipsing your text makes it not to overflow, and given the number of max caracters, take them and add "..." to the end of the word so the users can se there is more text somewhere.
 
@@ -38,6 +40,26 @@ $(document).ready(function(){
 ```
 
 Take note that the length of the word *DOES* count the length of the ellipsi. When you use it, make sure to subtract the length of the ellipsi you chose, or subtract 3 when using the default. For example: if you set the length for 30, your text will have the length of 27 + 3 caracters of the ellipsi, using the default configuration.
+
+# Avoiding the last word being cut off
+
+If you dont want the last word of being cut off like: "My dog is very fun..." you can set the option ```dontCut``` to ```true```:
+
+```js
+$(document).ready(function(){
+	
+	$('.class').ellipsiText({
+		length:18,
+		ellipsi: "...",
+		dontCut:true
+	});
+})
+
+```
+
+Turns "My dog is very funny" into "My dog is very...".
+
+ *NOTE*: This option makes the length of the word **unpredictable**, though the max length of the word will be the length specified in the options.
 
 ## Example
 
