@@ -59,7 +59,28 @@ $(document).ready(function(){
 
 Turns "My dog is very funny" into "My dog is very...".
 
- *NOTE*: This option makes the length of the word **unpredictable**, though the max length of the word will be the length specified in the options.
+#### Note about this option
+This option makes the length of the word **unpredictable**, though the max length of the word will be the length specified in the options. This option search for the last index of a blank space, and return all the words until this index. This means that a whole word can be cut off because is impossible to know if a word is actually being cut off. So, the script takes the length specified, cuts the word into this length, search for the last index of a blank space and ignore every letter after this.
+
+Example:
+
+```html
+<p class="teste">Lorem ipsum dolor sit amet</p>
+```
+
+```js
+
+<script>
+$('.test').ellipsiText({
+	length:20,
+	dontCut:true
+})
+
+</script>
+
+```
+
+The text "Lorem ipsum dolor sit amet" turns into "Lorem ipsum..." though disabling the ```dontCut``` option the text becomes "Lorem ipsum dolor..." which should be the correct assumption.
 
 ## Example
 
