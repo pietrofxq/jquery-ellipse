@@ -14,26 +14,24 @@
         }, options );
 
     return this.each(function() {
-        var elem = $(this);
-        var txt = elem.text();
+        var elem = $(this),
+            txt = elem.text()
         if (settings.dontCut){
-            if (txt.length>settings.length) {
-                 var ola = txt.substr(0,settings.length - settings.ellipsi.length);
-                 var blankSpace = ola.lastIndexOf(' ');
-                 var stringFormatted = ola.substr(0,blankSpace);
-                 var slice = stringFormatted.slice(-1);
+            if (txt.length > settings.length) {
+                var ola = txt.substr(0,settings.length - settings.ellipsi.length),
+                    blankSpace = ola.lastIndexOf(' '),
+                    stringFormatted = ola.substr(0,blankSpace),
+                    slice = stringFormatted.slice(-1)
                  if (slice == "," || slice == "."){
                    var stringSemPonto = ola.substr(0,blankSpace -1);
-                   elem.text(stringSemPonto + settings.ellipsi);
-                } else {
-                    elem.text(stringFormatted + settings.ellipsi);
+                   elem.text(stringSemPonto + settings.ellipsi)
+                }   else {
+                    elem.text(stringFormatted + settings.ellipsi)
                 }
-              
             }
+        }   else {
 
-        }   else{
-
-                if (txt.length>settings.length) {
+                if (txt.length > settings.length) {
                      elem.text(txt.substr(0,settings.length - settings.ellipsi.length) + settings.ellipsi );
                 }
             }
